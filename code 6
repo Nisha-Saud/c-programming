@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+    system("cls");
+    char ch;
+    printf("enter any character");
+    scanf("%c",&ch);
+    if(ch>='A' && ch<='Z')
+    {
+        printf("upper case");
+    }
+    else if (ch>='a' && ch<='z')
+    {
+        printf("lower case");
+    }
+    else
+    {
+        printf("please enter english letter");
+    }
+    return 0;
+}
