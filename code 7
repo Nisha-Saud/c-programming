@@ -1,0 +1,8 @@
+#include<stdio.h>
+int main()
+{
+    system("cls");
+    int a = (int) 2.333;
+    printf("%d",a);
+    return 0;
+}
