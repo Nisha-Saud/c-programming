@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main()
+{
+    char n;
+    system("cls");
+    printf("Enter any name:");
+    scanf("%c",&n);
+    printf("The number you entered is %c",n);
+    return 0;
+}
