@@ -1,0 +1,11 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    system("cls");
+int a;
+ printf("enter age");
+ scanf("%d",&a);
+ a>=18 ? printf("adult") : printf("not adult");
+ getch();
+}
