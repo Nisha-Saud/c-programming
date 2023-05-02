@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{ 
+    float a,b,c,real,img, disc,x1,x2;
+    printf("enter the values of coefficients");
+    scanf("%d%d%d",&a,&b,&c);
+    disc=b*b-4*a*c;
+    if(disc==0)
+    {
+        printf("the roots are real and equal");
+        x1=-b/(2*a);
+        printf("the roots are x1=x2=%f",x1);
+    }
+    else if(disc>0)
+    {
+        printf("the roota are real and distinct");
+        x1=(-b+sqrt(disc)/2*a);
+        x2=(-b-sqrt(disc)/2*a);
+        printf("x1 and x2 are %f and %f ",x1,x2);
+    }
+    else
+    {
+        printf("\n roots are imaginary");
+        real=(-b/2*a);
+        img=sqrt(b*b-4*a*c)/2*a;
+        printf("x1=%f+i%f",real,img);
+        printf("x2=%f-i%f",real,img);
+    }
+return 0;
+}
