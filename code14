@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main()
+{
+    char str[30];
+    printf("Enter your name in upper case");
+    scanf("%[ A-Z]",str);
+    printf("The name you entered is %s",str);
+    return 0;
+}
