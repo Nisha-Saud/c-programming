@@ -1,0 +1,33 @@
+#include<stdio.h>
+int main()
+{
+    int size,a[100],pos,num,i;
+    printf("Enter the size of an array");
+    scanf("%d",&size);
+    printf("Enter the array elements");
+    for(i=0;i<size;i++)
+    {
+scanf("%d",&a[i]);
+    }
+    printf("ENter the number to be added");
+    scanf("%d",&num);
+    printf("The position of the number to be added");
+    scanf("%d",&pos);
+    if(pos<0 || pos>(size +1))
+    {
+        printf("THE entered position is invalid re enter the position");
+    }
+    else
+    {
+        for(i=size;i>=pos;i--)
+        {
+            a[i] = a[i-1];
+        }
+        a[pos-1]=num;
+    }
+    for(i=0;i<size;i++)
+    {
+        printf("%d",a[i]);
+    }
+    return 0;
+}
